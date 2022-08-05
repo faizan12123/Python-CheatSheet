@@ -2,17 +2,15 @@
 
 import json
 
-#  Sample JSON
+# Sample JSON
 userJSON = '{"first_name": "John", "last_name": "Doe", "age": 30}'
 
-# Parse to dict
-user = json.loads(userJSON)
+# Parse JSON to dict
+user  = json.loads(userJSON)
+print(user)
+print(user['first_name'])
 
-# print(user)
-# print(user['first_name'])
-
+# Turn dict into json
 car = {'make': 'Ford', 'model': 'Mustang', 'year': 1970}
-
 carJSON = json.dumps(car)
-
 print(carJSON)
